@@ -39,7 +39,7 @@ readDoubleXYZ bs = V3 (read $ B8.unpack x) (read $ B8.unpack y) (read $ B8.unpac
     z = if null rest then "0" else head rest
 
 -- |
-mapSample :: Spline -> [Double] -> [(Double, V3 Double)]
+mapSample :: Spline V3 Double -> [Double] -> [(Double, V3 Double)]
 mapSample sp = foldr  f []
   where
     f x acc = case sample sp x of
