@@ -2,7 +2,7 @@
 
 ## Desciption
 
-3-dimentional parametric cubic spline interpolation.
+1,2,3,4-dimentional parametric cubic spline interpolation.
 
 ## Usage 
 
@@ -18,5 +18,5 @@ let anser = map (sample sp ) [0, pi/100 .. 4* pi]
 
 	* Test
 	* Generalize
-
-
+	* Loop
+    * Documents
