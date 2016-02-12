@@ -22,9 +22,20 @@ library
                      , linear
   default-language:    Haskell2010
 
-executable CubicSpline3D-example
+executable example-3d-parametric
   hs-source-dirs:      examples
-  main-is:             Main.hs
+  main-is:             example-3d-parametric.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , vector
+                     , linear
+                     , bytestring
+                     , CubicSpline3D
+  default-language:    Haskell2010
+
+executable example-2d-xy
+  hs-source-dirs:      examples
+  main-is:             example-2d-xy.hs
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
                      , vector
