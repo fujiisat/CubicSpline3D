@@ -10,7 +10,6 @@ module Math.CubicSpline3D (
 
 import           Data.List           (scanl')
 import           Data.Maybe          (fromMaybe)
-import           Data.Monoid         ((<>))
 import           Data.Vector.Unboxed ((!))
 import qualified Data.Vector.Unboxed as V
 import           Linear.Metric       (Metric, distance)
