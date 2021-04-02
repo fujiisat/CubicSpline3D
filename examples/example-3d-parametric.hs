@@ -4,9 +4,6 @@ module Main where
 
 import qualified Data.ByteString.Lazy.Char8 as B8
 import           Data.List                  (intercalate)
-import           Data.Monoid                ((<>))
-import qualified Data.Vector.Unboxed        as V
-import           Linear.Metric              (distance)
 import           Linear.V3
 import           System.Environment         (getArgs, getProgName)
 
